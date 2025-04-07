@@ -16,7 +16,7 @@ export function useInView(options: UseInViewOptions = {}) {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    // If we've already triggered once and triggerOnce is true, don't re-observe
+    // If we ve already triggered once and triggerOnce is true, don t re-observe
     if (triggerOnce && hasTriggered) return;
 
     const observer = new IntersectionObserver(
@@ -28,7 +28,7 @@ export function useInView(options: UseInViewOptions = {}) {
 
         if (isIntersecting && triggerOnce) {
           setHasTriggered(true);
-          // Clean up observer if triggerOnce is true and we've triggered
+          // Clean up observer if triggerOnce is true and we ve triggered
           if (ref.current) {
             observer.unobserve(ref.current);
           }

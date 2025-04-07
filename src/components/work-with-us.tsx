@@ -26,7 +26,7 @@ export default function WorkWithUs() {
       points: [
         "Provide technology that transforms small business, remote work, online learning, entertainment, and gaming",
         "Offer solutions customers actively seek out",
-        "Deliver genuine value that makes a difference in people's daily lives",
+        "Deliver genuine value that makes a difference in people s daily lives",
       ],
     },
     {
@@ -69,10 +69,10 @@ export default function WorkWithUs() {
           </p>
 
           <p className="text-lg mb-12 leading-relaxed max-w-4xl mx-auto text-center">
-            Selling high-speed internet with Indigo Solutions Group isn't just a
-            job—it's your gateway to an exciting career in one of America's
+            Selling high-speed internet with Indigo Solutions Group isn t just a
+            job—it s your gateway to an exciting career in one of America s
             fastest-growing industries. As you help connect communities
-            nationwide with essential technology, you'll build valuable skills
+            nationwide with essential technology, you ll build valuable skills
             and earn industry-leading commissions.
           </p>
 
@@ -96,7 +96,7 @@ export default function WorkWithUs() {
               Make Your Mark While Making Your Future
             </h3>
             <p className="text-lg mb-6 text-center">
-              At Indigo Solutions Group, you'll build a rewarding career while
+              At Indigo Solutions Group, you ll build a rewarding career while
               empowering communities with essential technology; all while
               earning top commissions in the industry.
             </p>

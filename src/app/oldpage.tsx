@@ -46,8 +46,8 @@ const Footer = dynamic(() => import("@/components/footer"), {
   loading: () => <div>Loading Footer...</div>,
 });
 
-// Import ThemeScript normally since it's in the same directory
-import ThemeScript from "./theme-script";
+// Import ThemeScript normally since it s in the same directory
+// import ThemeScript from "./theme-script";
 
 export default function Home() {
   return (

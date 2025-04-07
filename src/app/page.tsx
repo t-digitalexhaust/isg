@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar";
-import ThemeScript from "./theme-script";
+// import ThemeScript from "./theme-script";
 
 export default function Home() {
   return (

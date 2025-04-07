@@ -70,7 +70,7 @@ export default function InterviewForm() {
                 Application Submitted!
               </div>
               <p>
-                We'll be in touch with you shortly to schedule your interview.
+                We ll be in touch with you shortly to schedule your interview.
               </p>
             </div>
           ) : (

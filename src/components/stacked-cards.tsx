@@ -43,7 +43,7 @@ export default function StackedCards({ items }: StackedCardsProps) {
     };
   }, []);
 
-  // Simple scroll handler that doesn't hijack scrolling
+  // Simple scroll handler that doesn t hijack scrolling
   useEffect(() => {
     if (!inView) {
       // Reset when not in view

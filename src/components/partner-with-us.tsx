@@ -23,7 +23,7 @@ export default function PartnerWithUs() {
     {
       title: "Decades of Expertise",
       points: [
-        "Leverage Indigo Solutions' 25 years of specialized marketing and sales experience",
+        "Leverage Indigo Solutions  25 years of specialized marketing and sales experience",
         "Benefit from our refined processes in recruiting, hiring, and training",
         "Access data-driven coaching systems that deliver measurable results",
       ],
