@@ -1,26 +1,111 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base colors for reference */
+  --dark-indigo: #211f60;
+  --yellow: #ffc602;
+  --white: #ffffff;
+  --black: #0f172a;
+  --light-gray: #f8fafc;
+  --dark-gray: #1e293b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    background-color: #ffffff;
+    color: #0f172a;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .dark body {
+    background-color: #0f172a;
+    color: #ffffff;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Glass card styling with direct CSS */
+.glass-card {
+  border-radius: 12px;
+  border-width: 1px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  background-color: rgba(230, 230, 250, 0.5); /* Light purple (lavender) */
+  border-color: rgba(147, 112, 219, 0.2); /* Medium purple border */
+  backdrop-filter: blur(8px);
+}
+
+.dark .glass-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: rgba(
+    230,
+    230,
+    250,
+    0.7
+  ); /* Slightly more opaque light purple on hover */
+}
+
+.dark .glass-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Glass button styling */
+.glass-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: #211f60; /* Dark indigo text in light mode */
+  border-color: #ffc602; /* Yellow border in light mode */
+  border-radius: 6px;
+}
+
+.glass-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-button {
+  background-color: rgba(
+    255,
+    198,
+    2,
+    0.2
+  ); /* Yellow tinted background in dark mode */
+  border-color: rgba(255, 198, 2, 0.3); /* Yellow border in dark mode */
+  color: #ffffff; /* White text in dark mode */
+}
+
+.dark .glass-button:hover {
+  background-color: rgba(255, 198, 2, 0.3); /* Slightly more opaque on hover */
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
